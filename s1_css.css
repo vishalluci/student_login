@@ -83,6 +83,10 @@ body {
     margin-left: 30px;
 }
 
+.form .left .overlay span i:hover {
+    transform: scale(0.98);
+}
+
 .form .right {
     width: 40%;
     padding: 40px;
@@ -144,6 +148,11 @@ body {
     background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
 }
 
+.form .right button:hover {
+    transform: scale(0.98);
+    background-image: linear-gradient(135deg, rgb(238, 186, 90) 10%, orange 100%);
+}
+
 label {
     display: block;
     position: relative;
@@ -161,6 +170,12 @@ label::before {
     left: -30px;
     transition: all 0.2s linear;
 }
+
+.form .right .remember-me--forget-password p:hover {
+    text-decoration: underline;
+    color: #3b5998;
+}
+
 
 label:hover::before {
     font-family: FontAwesome;

@@ -114,13 +114,27 @@ body {
 }
 
 .form .right input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     font-size: 16px;
     border: none;
+    background: transparent;
     outline: none;
     border-bottom: 2px solid #B0B3B9;
+}
+
+.form .right .inputs .fa {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.form .right .inputs .eye {
+    position: absolute;
+}
+
+#open {
+    display: none;
 }
 
 .form .right .remember-me--forget-password {
@@ -135,7 +149,7 @@ body {
     width: auto;
 }
 
-.form .right button {
+.form .right input[type="submit"] {
     float: right;
     color: #fff;
     font-size: 16px;
@@ -148,7 +162,7 @@ body {
     background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
 }
 
-.form .right button:hover {
+s .form .right button:hover {
     transform: scale(0.98);
     background-image: linear-gradient(135deg, rgb(238, 186, 90) 10%, orange 100%);
 }
@@ -171,11 +185,14 @@ label::before {
     transition: all 0.2s linear;
 }
 
+.form .right .remember-me--forget-password {
+    padding: 10px;
+}
+
 .form .right .remember-me--forget-password p:hover {
     text-decoration: underline;
     color: #3b5998;
 }
-
 
 label:hover::before {
     font-family: FontAwesome;
@@ -198,5 +215,19 @@ label span.text-checkbox {
 }
 
 label input[type="checkbox"] {
+    display: none;
+}
+
+.form .right .inputs #log_err,
+#pass_err {
+    margin-top: 5px;
+    width: 99%;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
     display: none;
 }

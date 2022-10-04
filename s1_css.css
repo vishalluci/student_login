@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    /* padding: 10px; */
 }
 
 body {
@@ -187,7 +188,7 @@ label {
 }
 
 .form .right .remember-me--forget-password .f_link {
-    margin-left: 40px;
+    margin-left: 50px;
     justify-content: space-between;
     display: flex;
 }
@@ -227,5 +228,6 @@ label span.text-checkbox {
 .form .right .inputs .back_log {
     text-align: center;
     display: flex;
-    padding: 50px;
+    padding: 100px;
+    text-decoration: none;
 }
